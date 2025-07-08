@@ -57,3 +57,26 @@ Coming soon... (Optional: add link to deployed frontend)
 ```bash
 git clone https://github.com/Afom12/queueease.git
 cd queueease
+
+cd backend
+npm install
+# Add .env file with your MongoDB URI, JWT secret, etc.
+npm start
+
+cd ../frontend
+npm install
+npm run dev
+
+
+---
+
+## 🚨 What to Do Next
+
+1. Save that content in a file named `README.md` in your main `queueease/` folder
+2. Then run:
+
+```bash
+git add README.md
+git commit -m "Add project README file"
+git push
+
