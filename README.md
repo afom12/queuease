@@ -1,12 +1,6 @@
 # QueueEase - Immigration Queue Management System
 
-QueueEase is a web-based application designed to simplify and digitize the immigration service queue process in Ethiopia. It allows users to register online, schedule appointments, track their queue status in real-time, and receive notifications about their turn — all from their device.
-
----
-
-## 🌐 Live Demo
-
-Coming soon... (Optional: add link to deployed frontend)
+QueueEase is a website designed to simplify and digitize the immigration service queue process in Ethiopia. It allows users to register online, schedule appointments, track their queue status in real-time, and receive notifications about their turn — all from their device.
 
 ---
 
@@ -54,29 +48,18 @@ Coming soon... (Optional: add link to deployed frontend)
 ## 📦 Installation
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/Afom12/queueease.git
-cd queueease
+    ```bash
+     git clone https://github.com/Afom12/queueease.git
+    cd queueease
 
-cd backend
-npm install
-# Add .env file with your MongoDB URI, JWT secret, etc.
-npm start
+2. Setup Backendt
 
 cd ../frontend
 npm install
 npm run dev
 
+3. Setup Frontend
 
----
-
-## 🚨 What to Do Next
-
-1. Save that content in a file named `README.md` in your main `queueease/` folder
-2. Then run:
-
-```bash
-git add README.md
-git commit -m "Add project README file"
-git push
-
+cd ../frontend
+npm install
+npm run dev
