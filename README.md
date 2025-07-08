@@ -7,6 +7,7 @@ QueueEase is a website designed to simplify and digitize the immigration service
 ## 📸 Screenshots
 
 ![Screenshot 2025-07-08 180137](https://github.com/user-attachments/assets/4afa83ab-40b8-4500-acaf-d4654bef4fbb)
+![Screenshot 2025-07-08 181741](https://github.com/user-attachments/assets/34e09b26-d7ec-4d16-8a50-14c5222472c8)
 <!-- You can add images like this after you push them into your GitHub repo -->
 <!-- ![Home Page](./screenshots/homepage.png) -->
 
@@ -18,6 +19,7 @@ QueueEase is a website designed to simplify and digitize the immigration service
 - 📅 **Online Queue Registration**
 - 🔄 **Rescheduling / Cancellation**
 - 🔔 **Real-Time Notifications**
+
 - 👀 **Live Queue Tracking**
 - ⏱️ **Estimated Waiting Time**
 - 📂 **Admin Dashboard**
