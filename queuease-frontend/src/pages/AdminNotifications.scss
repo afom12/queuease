@@ -1,0 +1,37 @@
+.admin-notifications {
+    padding: 2rem;
+  
+    h2 {
+      margin-bottom: 1rem;
+      color: #272757;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
+      th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+      }
+  
+      th {
+        background: #f8f8f8;
+        color: #444;
+      }
+  
+      .sent {
+        color: green;
+        font-weight: bold;
+      }
+  
+      .failed {
+        color: red;
+        font-weight: bold;
+      }
+    }
+  }
+  

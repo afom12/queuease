@@ -1,0 +1,164 @@
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #0d0c1d;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+
+  .sidebar {
+    width: 240px;
+    background-color: #12122b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 24px;
+      color: #f0c040;
+      font-family: 'Georgia', serif;
+      margin-bottom: 20px;
+    }
+
+    .nav a {
+      color: #ccc;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      gap: 10px;
+      font-size: 16px;
+
+      &.active {
+        color: white;
+        font-weight: bold;
+      }
+
+      &:hover {
+        color: #f0c040;
+      }
+    }
+
+    .logout {
+      margin-top: 20px;
+
+      a {
+        color: #ccc;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+          color: #f44336;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+      .search {
+        display: flex;
+        align-items: center;
+        background: #1a1a2e;
+        padding: 8px 12px;
+        border-radius: 8px;
+
+        input {
+          background: transparent;
+          border: none;
+          color: white;
+          margin-left: 10px;
+          outline: none;
+        }
+      }
+
+      .icons {
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+      }
+    }
+
+    .page-content {
+      flex: 1;
+      padding: 30px;
+      background-color: #f9f9f9;
+      color: #2b2d42;
+      overflow-y: auto;
+
+      .content {
+        margin-top: 30px;
+
+        .back-button {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          color: #ccc;
+          cursor: pointer;
+          margin-bottom: 20px;
+        }
+
+        .image-box img {
+          max-width: 80%;
+          height: auto;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+
+        .heading {
+          font-size: 24px;
+          color: #f0c040;
+        }
+
+        .description {
+          margin-top: 10px;
+          line-height: 1.6;
+          color: #555;
+          max-width: 600px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .sidebar {
+      flex-direction: row;
+      height: auto;
+      width: 100%;
+      overflow-x: auto;
+      padding: 10px;
+
+      .logo {
+        display: none;
+      }
+
+      .nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 12px;
+
+        a {
+          font-size: 14px;
+          padding: 8px 10px;
+        }
+      }
+    }
+
+    .main-content .page-content {
+      padding: 15px;
+    }
+  }
+}

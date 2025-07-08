@@ -1,0 +1,48 @@
+.admin-reminders {
+    padding: 2rem;
+  
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+  
+    .log-table-wrapper {
+      overflow-x: auto;
+    }
+  
+    .log-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Segoe UI', sans-serif;
+  
+      th, td {
+        padding: 12px 16px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+      }
+  
+      th {
+        background: #f0f0f0;
+      }
+  
+      .sent {
+        color: green;
+        font-weight: 600;
+      }
+  
+      .failed {
+        color: red;
+        font-weight: 600;
+      }
+  
+      .error {
+        color: #a00;
+        font-size: 0.9rem;
+      }
+  
+      tr:hover {
+        background: #f9f9f9;
+      }
+    }
+  }
+  

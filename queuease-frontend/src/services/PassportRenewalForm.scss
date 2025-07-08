@@ -1,0 +1,290 @@
+.passport-renewal-form-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  .form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    h2 {
+      font-size: 2rem;
+      color: #2b2d42;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #6b7280;
+      font-size: 1rem;
+    }
+  }
+
+  .progress-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #e5e7eb;
+      z-index: 1;
+    }
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+
+      .step-number {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #e5e7eb;
+        color: #6b7280;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .step-label {
+        font-size: 0.85rem;
+        color: #9ca3af;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      &.active {
+        .step-number {
+          background: #4a6fa5;
+          color: white;
+        }
+
+        .step-label {
+          color: #2b2d42;
+          font-weight: 500;
+        }
+      }
+
+      &.completed {
+        .step-number {
+          background: #10b981;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .modern-form {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+    .form-step {
+      animation: fadeIn 0.3s ease;
+    }
+
+    .input-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: flex;
+        align-items: center;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #374151;
+        margin-bottom: 0.5rem;
+
+        .input-icon {
+          margin-right: 0.5rem;
+          color: #4a6fa5;
+          font-size: 0.9rem;
+        }
+      }
+
+      input, select {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        transition: all 0.2s ease;
+        background: white;
+
+        &:focus {
+          outline: none;
+          border-color: #4a6fa5;
+          box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2);
+        }
+      }
+
+      input[type="date"] {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+      }
+    }
+
+    .file-upload-container {
+      margin-bottom: 2rem;
+
+      .file-upload-box {
+        border: 2px dashed #e5e7eb;
+        border-radius: 8px;
+        padding: 2rem;
+        text-align: center;
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+          border-color: #4a6fa5;
+          background: #f8fafc;
+        }
+
+        .file-input {
+          display: none;
+        }
+
+        .file-upload-label {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #6b7280;
+          cursor: pointer;
+
+          .file-icon {
+            margin-bottom: 0.5rem;
+            color: #4a6fa5;
+          }
+
+          .file-name {
+            color: #2b2d42;
+            font-weight: 500;
+            word-break: break-all;
+            text-align: center;
+          }
+
+          .file-types {
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            color: #9ca3af;
+          }
+        }
+      }
+    }
+
+    .document-checklist {
+      background: #f9fafb;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+        color: #2b2d42;
+      }
+
+      ul {
+        padding-left: 1.25rem;
+        margin: 0;
+        color: #4b5563;
+
+        li {
+          margin-bottom: 0.5rem;
+          line-height: 1.5;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+
+      button {
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        &.back-button {
+          background: white;
+          border: 1px solid #e5e7eb;
+          color: #4b5563;
+
+          &:hover {
+            background: #f3f4f6;
+          }
+        }
+
+        &.next-button {
+          background: #4a6fa5;
+          color: white;
+          border: none;
+
+          &:hover {
+            background: #3a5a80;
+            transform: translateY(-1px);
+          }
+        }
+
+        &.submit-button {
+          background: #10b981;
+          color: white;
+          border: none;
+
+          &:hover {
+            background: #0e9f72;
+            transform: translateY(-1px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .passport-renewal-form-container {
+    padding: 0 1rem;
+
+    .modern-form {
+      padding: 1.5rem;
+    }
+
+    .progress-indicator {
+      gap: 2rem;
+
+      .step-label {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

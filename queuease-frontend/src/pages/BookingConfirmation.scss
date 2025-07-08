@@ -1,0 +1,66 @@
+.confirmation-page {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+
+  .confirmation-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 3rem;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+
+    .confirmation-icon {
+      font-size: 3rem;
+      color: #28a745;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1e1e2f;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .booking-summary {
+      text-align: left;
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+
+      .summary-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+
+        svg {
+          color: #4a6fa5;
+        }
+      }
+    }
+
+    .home-button {
+      padding: 0.75rem 2rem;
+      background: #4a6fa5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+
+      &:hover {
+        background: #3a568c;
+      }
+    }
+  }
+}

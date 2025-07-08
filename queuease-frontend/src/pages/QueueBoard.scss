@@ -1,0 +1,81 @@
+.queue-board {
+    padding: 3rem;
+    background: #272757;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+  
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+  
+      h1 {
+        font-size: 2.5rem;
+        color: #FFBF00;
+      }
+  
+      .filters {
+        margin-top: 1.5rem;
+  
+        label {
+          font-weight: 500;
+          margin-right: 0.5rem;
+        }
+  
+        select {
+          padding: 0.5rem 1rem;
+          border-radius: 6px;
+          border: none;
+          font-size: 1rem;
+        }
+      }
+    }
+  
+    .now-serving,
+    .next-up {
+      background: #1e1e3a;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      animation: fadeIn 0.5s ease-in;
+    }
+  
+    .current-box {
+      background: #ffbf00;
+      color: #000;
+      padding: 1.5rem;
+      border-radius: 8px;
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  
+    .waiting-count {
+      font-weight: bold;
+      color: #FFBF00;
+      margin-bottom: 1rem;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        background: #34346d;
+        padding: 1rem;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

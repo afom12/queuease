@@ -1,0 +1,82 @@
+.manage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+  font-family: sans-serif;
+}
+
+.manage-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h2 {
+    color: #2b2d42;
+    margin-bottom: 20px;
+  }
+
+  .booking-info {
+    margin-bottom: 20px;
+    text-align: left;
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  .reschedule-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #2b2d42;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ddb237;
+      }
+    }
+  }
+
+  .cancel-btn {
+    padding: 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #c9302c;
+    }
+  }
+
+  .no-booking {
+    color: #888;
+    font-size: 16px;
+  }
+}

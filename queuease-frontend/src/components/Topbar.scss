@@ -1,0 +1,120 @@
+.topbar {
+  height: 60px;
+  background: #1e1b3a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  position: relative;
+  z-index: 10;
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    background: #292652;
+    padding: 8px 12px;
+    border-radius: 10px;
+
+    input {
+      background: transparent;
+      border: none;
+      color: white;
+      margin-left: 10px;
+      outline: none;
+      width: 200px;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    svg {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .topbar-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .icon {
+      font-size: 20px;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.2s ease;
+      padding: 8px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scale(1.1);
+      }
+
+      .dropdown {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background: white;
+        color: #333;
+        width: 250px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.3s ease;
+        z-index: 99;
+
+        h4 {
+          margin-bottom: 10px;
+          font-size: 16px;
+          color: #1e1b3a;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            &:hover {
+              background-color: #f8f8f8;
+            }
+          }
+        }
+
+        &.notifications {
+          li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

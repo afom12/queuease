@@ -1,0 +1,60 @@
+/* Theme Variables - Better to use CSS variables */
+:root {
+  --transition-time: 0.3s;
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #646cff;
+  --secondary-color: #f5f5f5;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff; 
+  --primary-color: #535bf2;
+  --secondary-color: #1e1e1e;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-time), color var(--transition-time);
+}
+
+/* Inherit colors for all elements */
+body * {
+  color: inherit;
+  transition: background-color var(--transition-time), color var(--transition-time);
+}
+
+/* Your existing styles - updated to use variables */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--primary-color));
+}
+
+.card {
+  padding: 2em;
+  background-color: var(--secondary-color);
+}
+
+.read-the-docs {
+  color: #888; /* This could also use a theme variable */
+}

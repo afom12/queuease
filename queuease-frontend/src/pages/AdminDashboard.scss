@@ -1,0 +1,31 @@
+.admin-dashboard {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #2b2d42;
+  }
+
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    th, td {
+      padding: 1rem;
+      border: 1px solid #eaeaea;
+      text-align: left;
+    }
+
+    th {
+      background-color: #272757;
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+  }
+}

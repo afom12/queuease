@@ -1,0 +1,42 @@
+.contact-page {
+    padding: 30px;
+  
+    h2 {
+      color: #2b2d42;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      input,
+      textarea {
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+      }
+  
+      button {
+        background-color: #f0c040;
+        color: #2b2d42;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #e0b030;
+        }
+      }
+    }
+  }
+  

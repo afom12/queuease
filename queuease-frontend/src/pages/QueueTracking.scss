@@ -1,0 +1,55 @@
+.tracking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #edf2f7;
+    font-family: sans-serif;
+  }
+  
+  .tracking-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 20px;
+      color: #2b2d42;
+    }
+  
+    .info p {
+      margin: 10px 0;
+      color: #333;
+    }
+  
+    .progress-bar {
+      margin: 20px 0;
+      background-color: #e0e0e0;
+      border-radius: 20px;
+      height: 15px;
+      overflow: hidden;
+  
+      .progress {
+        height: 100%;
+        background-color: #f0c040;
+        transition: width 0.3s ease;
+      }
+    }
+  
+    .refresh-btn {
+      background-color: #2b2d42;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #1d1f32;
+      }
+    }
+  }
+  

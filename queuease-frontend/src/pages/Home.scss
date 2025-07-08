@@ -1,0 +1,89 @@
+.home-page {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // Welcome Card
+  .welcome-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px 40px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+
+    h1 {
+      font-size: 36px;
+      color: #34290a;
+
+      span {
+        color: #f0c040;
+      }
+    }
+
+    p {
+      color: #5a5858;
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  // Stats Cards
+  .dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+
+    .card {
+      background: rgb(241, 232, 232);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+      min-width: 200px;
+      max-width: 250px;
+      text-align: center;
+      transition: all 0.3s ease;
+
+      h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #2b2d42;
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: bold;
+        color: #f0c040;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  // Hero Image
+  .hero-image {
+    img {
+      max-width: 100%;
+      width: 900px;
+      height: 800px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}
