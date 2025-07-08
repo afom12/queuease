@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import './styles/globals.scss'; // Remove this line if you don’t have 
+import './styles/globals.scss'; // Remove this line if you don’t 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
