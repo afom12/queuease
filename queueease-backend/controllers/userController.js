@@ -1,4 +1,3 @@
-
 const User = require('../models/user');
 const cloudinary = require('cloudinary').v2; // Optional, if you're using Cloudinary to store photos
 
