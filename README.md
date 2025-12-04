@@ -1,4 +1,3 @@
-
 # QueueEase - Immigration Queue Management System
 
 QueueEase is a website designed to simplify and digitize the immigration service queue process in Ethiopia. It allows users to register online, schedule appointments, track their queue status in real-time, and receive notifications about their turn — all from their device.
